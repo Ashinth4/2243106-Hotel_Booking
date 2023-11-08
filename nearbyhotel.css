@@ -19,7 +19,7 @@ body{
   }
   .menuBar-container{
       display: grid;
-      grid-template-columns: 50px auto repeat(5,100px) 200px 100px  auto;
+      grid-template-columns: 50px 180px repeat(5,100px) 200px 100px  auto;
       column-gap: 30px;
       justify-content: end;
       background-color:   rgb(61, 100, 119);
@@ -89,7 +89,7 @@ body{
   }
   .logo{
       grid-column: span 1;
-      transform: translate(-300px);
+      transform: translate(-100px,5px);
    
   }
   

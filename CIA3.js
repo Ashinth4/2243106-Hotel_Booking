@@ -24,24 +24,21 @@ function search_end(){
 function box_highlight(j){
     let b;
     document.querySelector('.img-container2').style.background = 
-    "linear-gradient( " 
-    + 'rgb(155, 250, 250)'
-    + ", " 
-    + 'rgb(171, 206, 226)'
-    + ")";
+    "linear-gradient(rgb("
+    + "205," + "209," + "210)" + ",silver" + ",white)";
+    
     b=document.querySelectorAll('.img-item1');
     for(let i=0; i< b.length;i++)
   {
     b[i].style.background = 'transparent';
+    b[i].style.color = 'white';
   }
+
     b[j].style.background = 
-    "linear-gradient( " 
-    + 'rgb(155, 250, 250)'
-    + ", " 
-    + 'rgb(171, 206, 226)'
-    + ")";
-    b[j].style.borderRadius= '10px 10px 0px 0px'
-  
+    "linear-gradient(rgb("
+    + "205," + "209," + "210)" + ",silver" + ",white)";
+    b[j].style.borderRadius= '10px 10px 0px 0px';
+    b[j].style.color = 'black';
   if(j==0)
   {
     document.querySelector('.box1').style.backgroundImage = "url('https://cdn1.goibibo.com/voy_ing/t_g/New_dWeb_Homepage_Maldives-1581454743.jpg')";

@@ -1,8 +1,9 @@
 body{
-  background:rgb(164, 151, 91)  ; 
+  background:rgb(126, 149, 164)  ; 
  /* background: linear-gradient( white,#8b8787);  rgb(154, 160, 93) */
  margin-left: 20px;
  margin-top: 0px;
+ color: white;
 }
 ul{
   list-style-type: none;
@@ -16,7 +17,7 @@ a{
 }
 .menuBar-container{
     display: grid;
-    grid-template-columns: 50px auto repeat(5,100px) 200px 100px  auto;
+    grid-template-columns: 50px 180px repeat(5,100px) 200px 100px  auto;
     column-gap: 30px;
     justify-content: end;
     background-color:   rgb(61, 100, 119);
@@ -25,7 +26,7 @@ a{
     position: sticky;
     top: 0;
     justify-items:last baseline;
-    transform: translate(0,-20px);
+    transform: translate(40px,-20px);
     z-index: 2;
     width: 1442px;
     transform: translate(-19px);
@@ -86,7 +87,7 @@ a{
 }
 .logo{
     grid-column: span 1;
-    transform: translate(-300px);
+    transform: translate(-100px,5px);
  
 }
 
@@ -127,20 +128,21 @@ a{
    z-index: 1;
 }
 .img-item1{
-    color: black;
+    color: white;
     cursor: pointer;
 }
 #img-item1{
-  background: linear-gradient(rgb(155, 250, 250),rgb(171, 206, 226));
-  border-radius: 10px 10px 0px 0px;
+  background: linear-gradient(rgb(205, 209, 210),silver,white);
+  border-radius: 10px 10px 0px 0px ;
+  color: black;
 }
 .img-container2{
     display: grid;
     grid-template-columns: repeat(4,310px);
-    background: linear-gradient(rgb(155, 250, 250),rgb(171, 206, 226));
+    background: linear-gradient(rgb(205, 209, 210),silver,white);
     border-radius: 10px;
     width: 87%;
-    box-shadow: 3px 3px 4px 2px  ;
+    box-shadow: 3px 3px 4px 2px black ;
     justify-content: center;
     z-index: 1;
 }
@@ -148,6 +150,9 @@ a{
     height: 250px;
     position: relative;
     
+}
+.img-item2 > label{
+  color: black;
 }
 .box{
     background-repeat: no-repeat;
@@ -536,25 +541,25 @@ background-color: rgba(29, 28, 25, 0.686) !important;
   z-index: 1;
 }
  .bitem1{
-  background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/57/99/c7/caption.jpg?w=300&h=-1&s=1) ;
+  background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/249794716.jpg?k=c587291998375d8acfca69e0deb9ec305ace66c48d58d650f21749bf0a4dd2f0&o=&hp=1) ;
   animation-name:b1 ;
   opacity: 1 !important;
   animation-duration: 25s !important;
 }
 .bitem2{
-  background-image: url(https://tse2.mm.bing.net/th/id/OIP.gLz6jE9eSo4P4IJeQtlqBwHaHa?w=190&h=190&c=7&r=0&o=5&dpr=1.3&pid=1.7) ;
+  background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/31211348.jpg?k=c469403df80f10e33120c7be42b61d458746716a4e04c62ad4b9afc1c22edc98&o=&hp=1) ;
   animation-name:b2 ;
   opacity: 1 !important;
   animation-duration: 25s !important;
 }
 .bitem3{
-  background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/57/9a/45/caption.jpg?w=300&h=-1&s=1) ;
+  background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/483813995.jpg?k=c60297db27b540a7080d2ca953b917285799c61aded37ff20337aec5617a03a5&o=&hp=1) ;
   animation-name:b3 ;
   opacity: 1 !important;
   animation-duration: 25s !important;
 }
 .bitem4{
-  background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/57/9a/90/caption.jpg?w=300&h=-1&s=1) ;
+  background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/285377290.jpg?k=57e9ff6f8428bbcebb3f0f98c449612abd885d3a7270f1c78f95f986b7cd1ad7&o=&hp=1) ;
   animation-name:b4 ;
   opacity: 1 !important;
   animation-duration: 25s !important;
