@@ -109,12 +109,13 @@ function setting_Exit(){
 function blur2(a){
   
     
-    document.querySelector('.menuBar-container').style.filter ="blur(" + a + ")";
-    document.querySelector('.img-container1').style.filter ="blur(" + a + ")";
-    document.querySelector('.img-container2').style.filter ="blur(" + a + ")";
-    document.querySelector('.animation-container').style.filter ="blur(" + a + ")";
-    document.querySelector('.settings-container').style.filter ="blur(" + a + ")";
-    document.querySelector('.about-container').style.filter ="blur(" + a + ")";
+    document.querySelector('.menuBar-container').style.filter = "blur(" + a + ")";
+    document.querySelector('.img-container1').style.filter = "blur(" + a + ")";
+    document.querySelector('.img-container2').style.filter = "blur(" + a + ")";
+    document.querySelector('.animation-container').style.filter = "blur(" + a + ")";
+    document.querySelector('.settings-container').style.filter = "blur(" + a + ")";
+    document.querySelector('.about-container').style.filter = "blur(" + a + ")";
+    
 }
 function login_open(){
   let a = '5px';
