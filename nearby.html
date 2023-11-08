@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <title>Near by Hotels</title>
+    <link rel="stylesheet" href="./CIA3.css">
+  </head>
+  <body>
+    <script src="./CIA3.js"> </script>
+
+    <div class="menuBar-container" >
+      <a href="./CIA3.html"><img src="./img/Ashinth.jpg" alt="Logo" height="50" width="50" class="logo" ></a>
+      <div></div>
+      <div></div>
+      <a href="#"><button class="menuBar-item-buttons" onclick="login_open()">Login/Sign_in</button></a>
+      <div class="menuBar-item-search">  
+        <input type="text" list="lang" placeholder="Select Language " style="padding: 10px 15px;" >
+        <datalist id="lang">
+            <option value="Tamil">
+                <option value="Telungu">
+            <option value="English">
+            <option value="Spanish">
+            <option value="Hindi">
+        </datalist>
+    </div>
+    <div class="menuBar-item-search">
+        <input type="search" onclick="search()" placeholder="Search Hotel..." style="float: left; padding: 10px 15px;border-radius: 15px;" >
+        <img src="https://th.bing.com/th?id=OIP._RTO9yp1xH5aQA0vS7fpHAHaHW&w=250&h=249&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="search" height="35.4" width="36.7" style="border-radius: 15px;border: 13px;position: relative;right: 39px;top: 2px;">
+
+    </div>
+    <button class="menuBar-item-buttons-setting " onclick="setting()" id="settings"></button>
+    
+    <div></div>
+</div>
+
+<div class="settings-container">
+    <button class="settings-container-closeButton" onclick="setting_Exit()"></button>
+    <ul>
+        <li><label for="mode">Mode</label></li>
+        <ul>
+            <li><input type="radio" onclick="theme1()" name="mode">Dark</li>
+            <li><input type="radio" onclick="theme2()" name="mode">Light</li>
+        </ul>
+    </ul>
+       
+</div>  
+
+<div class="_3d">
+
+<form action="#" class="contain2 login-container pos"  >
+    <button class="login-container-closeButton" onclick="login_close()"></button>
+<h1 style="grid-column: span 2;justify-self: center;">Login</h1>
+<div>User Name</div><input type="text">
+<div>Password</div><input type="password">
+<div class="fsign"><button class="lbutton">Login</button></div>
+<div onclick="moveLogin()" class="fsign">Do you want to <span style="color: blue;cursor: pointer;">Sign_in</span> ?</div>
+</form>
+<div class="login-container left lr_color"> <img src=".img//Ashinth (1).jpg" alt="logo" height="300" width="300" style="transform: translate(0px,30px);"></div>
+<div class="login-container right lr_color"><img src=".img//Ashinth (1).jpg" alt="logo" height="300" width="300" style="transform: translate(0px,30px);"></div>
+<form action="#" class="login-container contain1 pos"  >
+<button class="login-container-closeButton" onclick="login_close()"></button>
+<h1 style="grid-column: span 2;justify-self: center;">Sign_in</h1>
+<div>User Name</div><input type="text">
+<div>Password</div><input type="password">
+<div class="fsign"><button class="lbutton">Sign_in</button></div>
+<div onclick="movesignin()" class="fsign">Do you want to <span style="color: blue;cursor: pointer;">Login</span> ?</div>
+</form>
+
+</div>
+
+<form action="#"  class="search-container ">
+    <button class="search-container-closeButton" onclick="search_end()"></button>
+    <div>
+        <label for="ctry">Country</label>
+        <select name="country" id="ctry" >
+            <option value="op1"> India</option>
+            <option value="op1"> China</option>
+            <option value="op1"> Canada</option>
+            <option value="op1"> Republic of Ashinth </option>
+            <option value="op1"> Republic of Maroof </option>
+            <option value="op1"> Republic of Flop Prbas </option>
+            <option value="op1"> UAE</option>
+
+      </select>
+    </div>
+    <div ><label for="location">Location</label><input type="text"></div>
+    <div class="search-item"><label for="cin">Check in</label><input type="date" id="cin"><input type="time"></div>
+    <div class="search-item"><label for="cout">Check out</label><input type="date" id="cin"><input type="time"></div>
+    <input type="submit" value="Search" onclick="search_end()">
+    <div></div>
+ </form>
+
+
+
+
+
+        <div class="animation-container2">
+          <h1>Near By Hotels</h1> 
+          <div class="bitem1 aitem"><div class=" aitem div-movement" style="animation-name: b1;">
+            <ul> 
+              <li>Rating : 1/5</li>
+
+          </ul>
+        </div> </div>
+          <div class="bitem2 aitem"> <div class="aitem div-movement" style="animation-name: b2;">
+            <ul> 
+              <li>Rating : 2/5</li>
+
+          </ul>
+          </div></div>
+          <div class="bitem3 aitem"> <div class=" aitem div-movement" style="animation-name: b3;">
+            <ul> 
+              <li>Rating : 3/5</li>
+
+          </ul>
+          </div></div>
+          <div class="bitem4 aitem"> <div class="aitem div-movement" style="animation-name: b4;">
+            <ul> 
+              <li>Rating : 4/5</li>
+
+          </ul>
+          </div></div>
+          <div class="bitem5 aitem"> <div class="aitem div-movement" style="animation-name: b5;">
+            <ul> 
+              <li>Rating : 5/5</li>
+
+          </ul>
+          </div></div>
+      </div>
+
+
+      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7773.830639858263!2d77.49564349161614!3d13.041061899122736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3cc9b004a075%3A0xb220f1f2fff0ecb9!2sNagasandra%2C%20Bengaluru%2C%20Karnataka%20560073!5e0!3m2!1sen!2sin!4v1699432313427!5m2!1sen!2sin" 
+      width="1400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </body>
+</html>

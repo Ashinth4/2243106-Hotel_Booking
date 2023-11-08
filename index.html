@@ -1,0 +1,180 @@
+<html>
+  
+    <head>
+        <link rel="stylesheet" href="./CIA3.css">
+    </head>
+    <body>
+
+      <script src="./CIA3.js">  </script>
+      <div class="menuBar-container" style="background-color: black;">
+        <div class="logo"><img src="./img/Ashinth (1).jpg" alt="Logo" height="50" width="50"></div>
+        <div></div>
+        <a href="./nearby.html"><button class="menuBar-item-buttons">NearByHotels</button></a>
+        <a href="#"><button class="menuBar-item-buttons" onclick="login_open()">Login/Sign_in</button></a>
+        <div class="menuBar-item-search">  
+            <input type="text" list="lang" placeholder="Select Language " style="padding: 10px 15px;" >
+            <datalist id="lang">
+                <option value="Tamil">
+                    <option value="Telungu">
+                <option value="English">
+                <option value="Spanish">
+                <option value="Hindi">
+            </datalist>
+        </div>
+        <div class="menuBar-item-search">
+            <input type="search" onclick="search()" placeholder="Search Hotel..." style="float: left; padding: 10px 15px;border-radius: 15px;" >
+            <img src="https://th.bing.com/th?id=OIP._RTO9yp1xH5aQA0vS7fpHAHaHW&w=250&h=249&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="search" height="35.4" width="36.7" style="border-radius: 15px;border: 13px;position: relative;right: 39px;top: 2px;">
+
+        </div>
+        <button class="menuBar-item-buttons-setting " onclick="setting()" id="settings"></button>
+        
+        <div></div>
+    </div>
+    
+    <div class="settings-container">
+        <button class="settings-container-closeButton" onclick="setting_Exit()"></button>
+        <ul>
+            <li><label for="mode">Mode</label></li>
+            <ul>
+                <li><input type="radio" onclick="theme1()" name="mode">Dark</li>
+                <li><input type="radio" onclick="theme2()" name="mode">Light</li>
+            </ul>
+        </ul>
+           
+  </div>  
+ 
+  <div class="_3d">
+
+    <form action="#" class="contain2 login-container pos"  >
+        <button class="login-container-closeButton" onclick="login_close()"></button>
+    <h1 style="grid-column: span 2;justify-self: center;">Login</h1>
+    <div>User Name</div><input type="text">
+    <div>Password</div><input type="password">
+    <div class="fsign"><button class="lbutton">Login</button></div>
+    <div onclick="moveLogin()" class="fsign">Do you want to <span style="color: blue;cursor: pointer;">Sign_in</span> ?</div>
+</form>
+<div class="login-container left lr_color"> <img src="./img/Ashinth (1).jpg" alt="logo" height="300" width="300" style="transform: translate(0px,30px);"></div>
+<div class="login-container right lr_color"><img src="./img/Ashinth (1).jpg" alt="logo" height="300" width="300" style="transform: translate(0px,30px);"></div>
+<form action="#" class="login-container contain1 pos"  >
+    <button class="login-container-closeButton" onclick="login_close()"></button>
+    <h1 style="grid-column: span 2;justify-self: center;">Sign_in</h1>
+    <div>User Name</div><input type="text">
+    <div>Password</div><input type="password">
+    <div class="fsign"><button class="lbutton">Sign_in</button></div>
+    <div onclick="movesignin()" class="fsign">Do you want to <span style="color: blue;cursor: pointer;">Login</span> ?</div>
+</form>
+
+</div>
+
+    <form action="#"  class="search-container ">
+        <button class="search-container-closeButton" onclick="search_end()"></button>
+        <div>
+            <label for="ctry">Country</label>
+            <select name="country" id="ctry" >
+                <option value="op1"> India</option>
+                <option value="op1"> China</option>
+                <option value="op1"> Canada</option>
+                <option value="op1"> Republic of Ashinth </option>
+                <option value="op1"> Republic of Maroof </option>
+                <option value="op1"> Republic of Flop Prbas </option>
+                <option value="op1"> UAE</option>
+
+          </select>
+        </div>
+        <div ><label for="location">Location</label><input type="text"></div>
+        <div class="search-item"><label for="cin">Check in</label><input type="date" id="cin"><input type="time"></div>
+        <div class="search-item"><label for="cout">Check out</label><input type="date" id="cin"><input type="time"></div>
+        <input type="submit" value="Search" onclick="search_end()">
+        <div></div>
+     </form>
+
+     <br><br>
+
+        <div >
+            <div class="img-container1">
+                <div class="img-item1" id="img-item1" onclick="box_highlight(0)"><h4>Top spots</h4></div>
+            <div class="img-item1"  onclick="box_highlight(1)"><h4>resarts</h4></div>
+            <div class="img-item1" onclick="box_highlight(2)"><h4>Beach spots</h4></div>
+            <div class="img-item1" onclick="box_highlight(3)"><h4>City spots</h4></div>
+            </div>
+        </div>
+            <div class="img-container2">
+                <div class="img-item2">
+                    <div class="box1 box">
+                        <a href="./hotel1.html">
+                            <div class="sbox">
+                                <h3>Price Range - $10,000 to $99,98,000</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <label for="img1">Vacation spot Hotel</label>
+                </div>
+
+                <div class="img-item2">
+                    <div class="box2 box">
+                        <a href="./hotel2.html">
+                            <div class="sbox">
+                                <h3>Price Range - $10,000 to $99,98,000</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <label for="img1">Hotel 1</label>
+                </div>
+
+                <div class="img-item2">
+                    <div class="box3 box">
+                       <a href="./hotel1.html">
+                        <div class="sbox">
+                            <h3>Price Range - $10,000 to $99,98,000</h3>
+                        </div>
+                       </a>
+                    </div>
+                    <label for="img1">Hotel 2</label>
+                </div>
+
+                <div class="img-item2">
+                    <div class="box4 box">
+                        <a href="./hotel2.html">
+                            <div class="sbox">
+                                <h3>Price Range - $10,000 to $99,98,000</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <label for="img1">Hotel 3</label>
+                </div>
+            
+            </div>
+            
+           
+            <div class="animation-container">
+                <h1>Features</h1> 
+                <div class="aitem1 aitem"><h2>Gym</h2></div>
+                <div class="aitem2 aitem"><h2>Wifi</h2></div>
+                <div class="aitem3 aitem"><h2>Room service</h2></div>
+                <div class="aitem4 aitem"><h2>Swiming pool</h2></div>
+                <div class="aitem5 aitem"><h2>Airport shuttle</h2></div>
+            </div>
+        
+            
+            <div class="about-container">
+                <h4>about us</h4>
+                <h4>contact</h4>
+                <h4>sponsers</h4>
+                <h4>feedback</h4>
+                <div></div>
+                <ul>
+                    <li><img src="./img/telephone.png" alt="phone" width="20px" height="20px">62557882927</li>
+                    <li><img src="./img/gmail.png" alt="gmail" width="20px" height="20px">hotel@gmail.com</li>
+                    <li><img src="./img/instagram.png" alt="instagram" width="20px" height="20px">hotel_booking</li>
+                    <li><img src="./img/facebook.png" alt="facebook" width="20px" height="20px">hotel_booking</li>
+                </ul>
+                <ul>
+                        <li><a target="_blank" href="https://icons8.com/icon/H6C79JoP90DH/settings">Setting</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></li>
+                        <li><a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Freepik - Flaticon</a></li>
+
+                </ul>
+                
+            </div>
+            
+    </body>
+</html>

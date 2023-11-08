@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title>Hotel2</title>
+        <link rel="stylesheet" href="./nearbyhotel.css">
+    </head>
+    <body>
+
+
+        <script src="./hotel.js"> </script>
+        <div class="menuBar-container" style="background-color: rgb(164, 151, 91) ;" onload="document.body.style.color = 'red'; ">
+            <a href="./index.html" class="logo"><img src="./img/Ashinth (1).jpg" alt="Logo" height="50" width="50"></a>
+            <div></div>
+            <a href="./nearby.html"><button class="menuBar-item-buttons">NearByHotels</button></a>
+            <a href="#"><button class="menuBar-item-buttons" onclick="login_open()">Login/Sign_in</button></a>
+            <div class="menuBar-item-search">  
+                <input type="text" list="lang" placeholder="Select Language " style="padding: 10px 15px;" >
+                <datalist id="lang">
+                    <option value="Tamil">
+                        <option value="Telungu">
+                    <option value="English">
+                    <option value="Spanish">
+                    <option value="Hindi">
+                </datalist>
+            </div>
+            <div class="menuBar-item-search">
+                <input type="search" onclick="search()" placeholder="Search Hotel..." style="float: left; padding: 10px 15px;border-radius: 15px;" >
+                <img src="https://th.bing.com/th?id=OIP._RTO9yp1xH5aQA0vS7fpHAHaHW&w=250&h=249&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="search" height="35.4" width="36.7" style="border-radius: 15px;border: 13px;position: relative;right: 39px;top: 2px;">
+    
+            </div>
+            <button class="menuBar-item-buttons-setting " onclick="setting()" id="settings"></button>
+            
+            <div></div>
+        </div>
+        
+        <div class="settings-container">
+            <button class="settings-container-closeButton" onclick="setting_Exit()"></button>
+            <ul>
+                <li><label for="mode">Mode</label></li>
+                <ul>
+                    <li><input type="radio" onclick="theme1()" name="mode">Dark</li>
+                    <li><input type="radio" onclick="theme2()" name="mode">Light</li>
+                </ul>
+            </ul>
+               
+      </div>  
+     
+      <div class="_3d">
+    
+        <form action="#" class="contain22 login-container pos"  >
+            <button class="login-container-closeButton" onclick="login_close()"></button>
+        <h1 style="grid-column: span 2;justify-self: center;">Login</h1>
+        <div>User Name</div><input type="text">
+        <div>Password</div><input type="password">
+        <div class="fsign"><button class="lbutton">Login</button></div>
+        <div onclick="moveLogin()" class="fsign">Do you want to <span style="color: blue;cursor: pointer;">Sign_in</span> ?</div>
+    </form>
+    <div class="login-container left2 lr_color"> <img src="./img/Ashinth (1).jpg" alt="logo" height="300" width="300" style="transform: translate(0px,30px);"></div>
+    <div class="login-container right2 lr_color"><img src="./img/Ashinth (1).jpg" alt="logo" height="300" width="300" style="transform: translate(0px,30px);"></div>
+    <form action="#" class="login-container contain12 pos"  >
+        <button class="login-container-closeButton" onclick="login_close()"></button>
+        <h1 style="grid-column: span 2;justify-self: center;">Sign_in</h1>
+        <div>User Name</div><input type="text">
+        <div>Password</div><input type="password">
+        <div class="fsign"><button class="lbutton">Sign_in</button></div>
+        <div onclick="movesignin()" class="fsign">Do you want to <span style="color: blue;cursor: pointer;">Login</span> ?</div>
+    </form>
+    
+    </div>
+    
+        <form action="#"  class="search-container ">
+            <button class="search-container-closeButton" onclick="search_end()"></button>
+            <div>
+                <label for="ctry">Country</label>
+                <select name="country" id="ctry" >
+                    <option value="op1"> India</option>
+                    <option value="op1"> China</option>
+                    <option value="op1"> Canada</option>
+                    <option value="op1"> Republic of Ashinth </option>
+                    <option value="op1"> Republic of Maroof </option>
+                    <option value="op1"> Republic of Flop Prbas </option>
+                    <option value="op1"> UAE</option>
+    
+              </select>
+            </div>
+            <div ><label for="location">Location</label><input type="text"></div>
+            <div class="search-item"><label for="cin">Check in</label><input type="date" id="cin"><input type="time"></div>
+            <div class="search-item"><label for="cout">Check out</label><input type="date" id="cin"><input type="time"></div>
+            <input type="submit" value="Search" onclick="search_end()">
+            <div></div>
+         </form>
+    
+
+         <div class="_3d2">
+    
+            <div class="contain2 login-container2 "  ><img class="login-container2-image" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/250780302.jpg?k=2c477a6ee2d29aa52b93d6c454d26aae47aae4818ae18b127a4e8ba4caf8f65a&o=&hp=1" alt="logo" height="276" width="300" ></div>
+        <div class="login-container2 left "> <img class="login-container2-image"  src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/249560617.jpg?k=3f251cf0a1b96e0d111d25364e8e3e539b6f99ff4e6e5809375897b11fafd230&o=&hp=1" alt="logo" height="276" width="300"></div>
+        <div class="login-container2 right "><img class="login-container2-image"  src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/249560612.jpg?k=a1f7e2b5154b9c6de99c75057d0031cadb990a06a846bfa3f3e8f892b5effd4b&o=&hp=1" alt="logo" height="276" width="300"></div>
+        <div class="login-container2 contain1"  ><img class="login-container2-image"  src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/249794716.jpg?k=c587291998375d8acfca69e0deb9ec305ace66c48d58d650f21749bf0a4dd2f0&o=&hp=1" alt="logo" height="276" width="300"></div>
+        
+        </div>
+
+        <div class="content-container">
+          <h2 class="content-container-item1">Vivanta Bengaluru Residency Road</h2>
+          <h4 class="content-container-item1"><img src="https://cdn4.iconfinder.com/data/icons/location-map-1/64/x-18-512.png" alt="location_logo" height="20" width="20" ># 66, Residency Road, 560025 Bangalore, India </h4>
+          <h2 class="content-container-item1">Facilities</h2>
+          <div class="content-container-item2"><img src="./img/swimmer.png" alt="location_logo" height="30" width="30" > Pool - outdoor (kids)</div>
+          <div class="content-container-item2"><img src="./img/bus.png" alt="location_logo" height="30" width="30" > Airport shuttle</div>
+          <div class="content-container-item2"><img src="./img/hotel-service.png" alt="location_logo" height="30" width="30" > Room service</div>
+          <div class="content-container-item2"><img src="./img/fitness.png" alt="location_logo" height="30" width="30" > Fitness centre</div>
+          <div class="content-container-item2"><img src="./img/no-smoking.png" alt="location_logo" height="30" width="30" > Non-smoking rooms</div>
+          <div class="content-container-item2"><img src="./img/breakfast.png" alt="location_logo" height="30" width="30" > Fabulous breakfast</div>
+
+
+        </div>
+        
+        <div class="booking"><button class="booking-button"> <span>Book Now</span><span id="roomBooking"></span></button></div>
+
+        <div class="room-container">
+          <h3>Room Type</h3> <h3>Max Member</h3> <h3>Price for room/day</h3> <h3>Number of room</h3> <h3>Selection</h3>
+          <p>Standard Room</p> <div><img src="./img/user.png" height="20" width="20"><img src="./img/user.png" height="20" width="20"></div> <p>6,000</p> <input type="number" style="height: 50%;width: 70%;"> <input type="checkbox" style="height: 70%;width: 70%;">
+          <p>Standard Room</p> <div><img src="./img/user.png" height="20" width="20"><img src="./img/user.png" height="20" width="20"><img src="./img/user.png" height="20" width="20"></div> <p>7,000</p> <input type="number" style="height: 50%;width: 70%;"> <input type="checkbox" style="height: 70%;width: 70%;">
+          <p>king Room</p> <div><img src="./img/user.png" height="20" width="20"><img src="./img/user.png" height="20" width="20"></div> <p>58,000</p> <input type="number" style="height: 50%;width: 70%;"> <input type="checkbox" style="height: 70%;width: 70%;">
+          <p>Club Room</p> <div><img src="./img/user.png" height="20" width="20"><img src="./img/user.png" height="20" width="20"><img src="./img/user.png" height="20" width="20"><img src="./img/user.png" height="20" width="20"><img src="./img/user.png" height="20" width="20"></div> <p>25,000</p> <input type="number" style="height: 50%;width: 70%;"> <input type="checkbox" style="height: 70%;width: 70%;">
+          <p>Standard Room</p> <div><img src="./img/user.png" height="20" width="20"></div> <p>5,000</p> <input type="number" style="height: 50%;width: 70%;"> <input type="checkbox" style="height: 70%;width: 70%;">
+          <p>king Room</p> <div><img src="./img/user.png" height="20" width="20"><img src="./img/user.png" height="20" width="20"><img src="./img/user.png" height="20" width="20"></div> <p>38,000</p> <input type="number" style="height: 50%;width: 70%;"> <input type="checkbox" style="height: 70%;width: 70%;">
+
+
+
+        </div>
+
+
+      
+          
+    </body>
+</html>
